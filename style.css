@@ -1,0 +1,100 @@
+/*Google Font*/
+@import url(http://fonts.googleapis.com/css?family=Ubuntu);
+
+/* Reset */
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: white;
+}
+
+.table {
+	width: 600px;
+	color: #fff;
+	font-size: 12px;
+	font-family: Ubuntu, arial, verdana;
+	line-height: 150%;
+	text-align: center;
+	margin: 100px auto 0 auto;
+}
+
+.table>li {
+	background: linear-gradient(#666,#333);
+	width: 33.33%;
+	float: left;
+	list-style-type: none;
+	transition: all 0.2s;
+}
+
+.table>li.active {
+	background: linear-gradient(#8DBAFF, #0066FF);
+	transform: scale(1.03);
+	box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.5);
+}
+
+.table h3 {
+	text-transform: uppercase;
+	padding: 15px 0;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.table .price_body {
+	width: 125px;
+	height: 125px;
+	margin: 0 auto 15px auto;
+	border: 2px solid #fff;
+	border-radius: 100%;
+	display: table;
+}
+
+.table .cost {
+	font-size: 30px;
+	font-weight: bold;
+	text-transform: uppercase;
+	vertical-align: middle;
+	display: table-cell;
+}
+
+.table .cost .price_figure {
+	display: block;
+}
+
+.table .cost .price_length {
+	font-size: 11px;
+	font-weight: normal;
+}
+
+.table .features li {
+	list-style-type: none;
+	padding: 5px 0;
+}
+
+.table .footer {
+	padding: 10px;
+	background: #333;
+	margin-top: 10px;
+}
+
+.table .footer .action_button {
+	color: #fff;
+	font-size: 11px;
+	display: inline-block;
+	text-decoration: none;
+	font-weight: bold;
+	background: #000;
+	padding: 4px 20px;
+	border-radius: 15px;
+	background: linear-gradient(#666, #333);
+}
+
+.table li.active .footer .action_button {
+	background: linear-gradient(#8DBAFF, #0066FF);
+}
+
+.clear {
+	clear: both;
+}
